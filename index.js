@@ -23,6 +23,10 @@ const VoteRoutes = require("./routes/VotesRoutes")
 app.use("/", VoteRoutes)
 
 
+app.use("/", (req,res)=>{
+    res.send("hi")
+})
+
 
 
 const PORT = process.env.PORT || 3008;
